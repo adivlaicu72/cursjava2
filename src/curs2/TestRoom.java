@@ -9,8 +9,8 @@ public class TestRoom {
 		System.out.println("Perimetru baie:" + baie.calculPerimetru());
 		
 		Room dormitor = new Room(8.5, 6.0);
-		System.out.println("Arie baie:" + dormitor.calculArie());
-		System.out.println("Perimetru baie:" + dormitor.calculPerimetru());
+		System.out.println("Arie dormitor:" + dormitor.calculArie());
+		System.out.println("Perimetru dormitor:" + dormitor.calculPerimetru());
 
 	}
 
