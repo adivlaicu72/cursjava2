@@ -26,8 +26,13 @@ public class Tester {
 //	public Tester() {};
 	
 	//Tester tester1 = new Tester("Monica", 34);
-	public Tester(String nume, int varsta) {
-		numeTester =  nume;
-		varstaTester = varsta;
+	public Tester(String numeTester, int varstaTester) {
+		this.numeTester =  numeTester;
+		this.varstaTester = varstaTester;
+	};	
+	
+		public Tester(String nume) {
+			numeTester =  nume;
+			
 	};
 }
