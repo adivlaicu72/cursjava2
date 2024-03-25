@@ -15,7 +15,7 @@ public void askTheDayOfWeek() {
 	}
 public void checkDayOfWeek() {
 		
-		if ( dayOfWeek == 0) {
+		if ( dayOfWeek <= 0)  {
 			System.out.println("Te rog sa introduci un numar mai mare ca 0 !");
 			}
 		else if (dayOfWeek == 1) {
