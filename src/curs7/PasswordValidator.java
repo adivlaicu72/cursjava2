@@ -39,8 +39,8 @@ public class PasswordValidator {
 	}
 	
 	public void readPassword() {
-		System.out.println("Te rog introdu un parola :");
-		username = scan.next();
+		System.out.println("Te rog introdu o parola :");
+		password = scan.next();
 	}
 	
 	public boolean checkPasswordRules() {
@@ -70,6 +70,8 @@ public class PasswordValidator {
 			readPassword();
 			
 		}while(!checkPasswordRules());
+		
+		System.out.println("Parola valida!");
 		
 	}
 }
