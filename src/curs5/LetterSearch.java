@@ -12,6 +12,8 @@ import java.util.Scanner;
  * -- gasesc litera B printez si ies
  * Rezolvare 2: 
  * -- printez numarul de aparitii ale literei B in text
+ * 
+ * 
  */
 
 public class LetterSearch {
