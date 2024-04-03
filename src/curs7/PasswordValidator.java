@@ -3,26 +3,25 @@ package curs7;
 import java.util.Scanner;
 
 /*
- * Facem un program care valideaza o parola pe baza unor reguli
- * Regulile sunt: 
- * 1. Parola trebuie sa contina cel putina 10 caractere
+ * Facem un program care valideaza o parola pe baza unor reguli:
+ * Regulile sunt :
+ * 1. Parola trebuie sa contina cel putin 10 carcatere
  * 2. Parola trebuie sa contina o litera upper case
- * 3. Parola nu trebuie sa file la fel ca username
+ * 3. Parola nu trebuie sa fie la fel ca username
  * 
- * Printam regulile parolei
+ * Printam reguluile parolei
  * Intrebam userul un username si o parola
  * validam parola, daca parola respecta regulile
  * printam Parola valida
  * daca parola nu respecta regulile, atunci printam care dintre reguli nu este respectata
  * si intrebam din nou
- *
+ * 
  * 
  */
-
 public class PasswordValidator {
-	Scanner scan = new Scanner(System.in);
+	Scanner scan  =  new Scanner(System.in);
 	String username, password;
-	String regula1 = "Parola trebuie sa contina cel putin 10 caractere";
+	String regula1 = "Parola trebuie sa contina cel putin 10 carcatere";
 	String regula2 = "Parola trebuie sa contina o litera upper case";
 	String regula3 = "Parola nu trebuie sa fie la fel ca username";
 	
@@ -34,12 +33,12 @@ public class PasswordValidator {
 	}
 	
 	public void readUsername() {
-		System.out.println("Te rog introdu un username :");
-		username = scan.next();
+		System.out.println("Te rog introdu un username : ");
+		username = scan.next();	
 	}
-	
+
 	public void readPassword() {
-		System.out.println("Te rog introdu o parola :");
+		System.out.println("Te rog introdu parola : ");
 		password = scan.next();
 	}
 	
@@ -50,7 +49,7 @@ public class PasswordValidator {
 			System.out.println(regula1);
 			flag = false;
 		}
-		
+		//Dadada  == dadada --> false
 		if(password.equals(password.toLowerCase())) {
 			System.out.println(regula2);
 			flag = false;
@@ -60,9 +59,9 @@ public class PasswordValidator {
 			System.out.println(regula3);
 			flag = false;
 		}
-	
-		return flag;
+	return flag;
 	}
+	
 	
 	public void validatePassword() {
 		
@@ -72,6 +71,7 @@ public class PasswordValidator {
 		}while(!checkPasswordRules());
 		
 		System.out.println("Parola valida!");
-		
 	}
+	
+	
 }
