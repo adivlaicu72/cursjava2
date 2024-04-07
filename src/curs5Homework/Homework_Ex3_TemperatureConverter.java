@@ -6,14 +6,14 @@ public class Homework_Ex3_TemperatureConverter {
 
 	public static void main(String[] args) {
 	
-		Scanner input = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
 		// Ask the user to enter a temperature value
 		System.out.print("Enter temperature value: ");
-        double temp = input.nextDouble();       
+        double temp = scan.nextDouble();       
       
         System.out.print("Enter temperature scale (C, F, or K): ");
-        String scale = input.next();
+        String scale = scan.next();
       
         double celsius;
         switch(scale.toUpperCase()) {
