@@ -33,30 +33,35 @@ public class Homework_Ex2_Arrays {
 			monthNumber = scan.nextInt();
 		} 
 		
-		 if(monthNumber==1)
-			System.out.println("This is a: " +calendarArray[0]);
-		else if(monthNumber==2)
-			System.out.println("This is a: " +calendarArray[1]);
-		else if(monthNumber==3)
-			System.out.println("This is a: " +calendarArray[2]);
-		else if(monthNumber==4)
-			System.out.println("This is a: " +calendarArray[3]);
-		else if(monthNumber==5)
-			System.out.println("This is a: " +calendarArray[4]);
-		else if(monthNumber==6)
-			System.out.println("This is a: " +calendarArray[5]);
-		else if(monthNumber==7)
-			System.out.println("This is a: " +calendarArray[6]);
-		else if(monthNumber==8)
-			System.out.println("This is a: " +calendarArray[7]);
-		else if(monthNumber==9)
-			System.out.println("This is a: " +calendarArray[8]);
-		else if(monthNumber==10)
-			System.out.println("This is a: " +calendarArray[9]);
-		else if(monthNumber==11)
-			System.out.println("This is a: " +calendarArray[10]);
-		else if (monthNumber==12)
-			System.out.println("This is a: " +calendarArray[11]);
+//		 if(monthNumber==1)
+//			System.out.println("This is a: " +calendarArray[0]);
+//		else if(monthNumber==2)
+//			System.out.println("This is a: " +calendarArray[1]);
+//		else if(monthNumber==3)
+//			System.out.println("This is a: " +calendarArray[2]);
+//		else if(monthNumber==4)
+//			System.out.println("This is a: " +calendarArray[3]);
+//		else if(monthNumber==5)
+//			System.out.println("This is a: " +calendarArray[4]);
+//		else if(monthNumber==6)
+//			System.out.println("This is a: " +calendarArray[5]);
+//		else if(monthNumber==7)
+//			System.out.println("This is a: " +calendarArray[6]);
+//		else if(monthNumber==8)
+//			System.out.println("This is a: " +calendarArray[7]);
+//		else if(monthNumber==9)
+//			System.out.println("This is a: " +calendarArray[8]);
+//		else if(monthNumber==10)
+//			System.out.println("This is a: " +calendarArray[9]);
+//		else if(monthNumber==11)
+//			System.out.println("This is a: " +calendarArray[10]);
+//		else if (monthNumber==12)
+//			System.out.println("This is a: " +calendarArray[11]);
+		 for (int i=0;i<=calendarArray.length; i++) {
+	           if (monthNumber-1 == i) {
+	                System.out.println("This is a: " + calendarArray[i]);
+	           }
+	      }
 		
 	}
 }
