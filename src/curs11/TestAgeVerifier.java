@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class TestAgeVerifier {
 
 	public static void main(String[] args) {
-		
-		AgeVerifier obj = new AgeVerifier();
-		Scanner scan = new Scanner(System.in);
+
+		AgeVerifier obj =  new AgeVerifier();
+		Scanner scan  =  new Scanner(System.in);
 		System.out.println("Please enter your age : ");
-		int age = scan.nextInt();
-		
+		int age =  scan.nextInt();
 		
 		
 		try {
@@ -21,8 +20,9 @@ public class TestAgeVerifier {
 		}
 		
 		
-		System.out.println("Some other cod!");
-
+		
+		System.out.println("Some other code!");
+		
 	}
 
 }
