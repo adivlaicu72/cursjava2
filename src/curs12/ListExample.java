@@ -76,6 +76,7 @@ public class ListExample {
 		System.out.println("----------------------------");
 		list.clear();
 		System.out.println(list);
+		
 	}
 
 }
