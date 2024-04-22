@@ -24,10 +24,10 @@ public class TestProductsManagementStock {
 	            switch (choice) {
 	                case 1:
 	                    // ask for products stock details
-	                	System.out.println("The product is expired?: ");
-	                	boolean isExpired = input.hasNext();
-	                	System.out.println("The product is defect?: ");
-	                	boolean isDefect = input.hasNext();
+	                	System.out.println("The product is expired?: (true/false)");
+	                	boolean isExpired = input.nextBoolean();
+	                	System.out.println("The product is defect?: (true/false)");
+	                	boolean isDefect = input.nextBoolean();
 	                    System.out.println("Enter the product name: ");
 	                    String name = input.next();
 	                    System.out.println("Enter the product quantity: ");
@@ -39,7 +39,7 @@ public class TestProductsManagementStock {
 	                    Product newProduct = new Product(name, quantity, price);
 	                    products.add(newProduct);
 
-	                    System.out.println("Product added successfully");
+	                    System.out.println("Product added successfully! ");
 	                    break;
 
 	                case 2:
@@ -69,7 +69,7 @@ public class TestProductsManagementStock {
 	                    // display the list of products
 	                    System.out.println("Current products:");
 	                    for (Product product : products) {
-	                        System.out.println(product.toString());
+	                        System.out.println(product.disponibleQuantity());
 	                    }
 	                    break;
 

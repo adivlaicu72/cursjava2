@@ -36,7 +36,9 @@ public class Product {
 	    }
 
 	    public String disponibleQuantity() {
-	        return name + ", quantity: " + quantity + ", price: $" + price;
+	        return name + ", quantity: " + quantity + ", price: " +price +" RON";
 	    }
+	    
+	    
 	 
 }
