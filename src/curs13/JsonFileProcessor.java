@@ -59,10 +59,56 @@ public class JsonFileProcessor {
 			System.out.println("Nu am putut citi fisierul");
 			e.printStackTrace();
 		}
-		
-		
-		
+			
 	}
+	
+	@SuppressWarnings("unchecked")
+	public void updateJsonFile(String key, String value) {
+		
+		try(FileReader input = new FileReader("test.json")) {
+			JSONParser parser = new JSONParser();
+			JSONObject jsonObj = (JSONObject) parser.parse(input);
+			
+			jsonObj.put(key, value);
+			
+			try {
+				FileWriter output = new FileWriter("test.json");
+				output.write(jsonObj.toJSONString());
+				output.close();
+				
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+		}catch(Exception e) {
+			System.out.println("Nu am putut citi fisierul");
+			e.printStackTrace();
+		}
+	}
+		
+		public void deleteFromJsonFile(String key) {
+			
+			try(FileReader input = new FileReader("test.json")) {
+				JSONParser parser = new JSONParser();
+				JSONObject jsonObj = (JSONObject) parser.parse(input);
+				
+				jsonObj.remove(key);
+				
+				try {
+					FileWriter output = new FileWriter("test.json");
+					output.write(jsonObj.toJSONString());
+					output.close();
+					
+				}catch(Exception e) {
+					e.printStackTrace();
+				}
+				
+			}catch(Exception e) {
+				System.out.println("Nu am putut citi fisierul");
+				e.printStackTrace();
+			}
+		
+	} 
 	
 
 }
