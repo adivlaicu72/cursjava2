@@ -7,6 +7,16 @@ public class TestJsonfile {
 		JsonFileProcessor obj =  new JsonFileProcessor();
 		obj.writeJsonFile();
 		
+		obj.readJsonFile("email");
+		
+		System.out.println("--------------------------------------");
+		
+		obj.updateJsonFile("name", "Maria");
+		obj.readJsonFile("name");
+		
+		System.out.println("--------------------------------------");
+		
+		obj.deleteFromJsonFile("name");
 		obj.readJsonFile("name");
 		
 	}
